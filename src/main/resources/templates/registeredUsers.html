@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registered Users</title>
+</head>
+<body>
+<h1>Registered Users</h1>
+<ul>
+    <li th:each="user : ${users}" th:text="${user.getEmail()}"></li>
+
+</ul>
+
+<a th:href="@{/}">
+    <button>Back to main menu</button>
+</a>
+</body>
+</html>

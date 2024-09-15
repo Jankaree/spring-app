@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+</head>
+<body>
+
+
+
+
+
+    <a th:href="@{/register}">
+        <button>Register a New User</button>
+    </a>
+
+    <br>
+
+    <a th:href="@{/registeredUsers}">
+        <button>All users</button>
+    </a>
+
+    <form th:action="@{/perform_logout}" method="post">
+        <input type="submit" value="Logout">
+    </form>
+
+</body>
+</html>
